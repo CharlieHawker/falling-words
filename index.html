@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" media="screen" href="falling-words.css">
+    <script type="text/javascript" src="falling-words.js" charset="utf-8"></script>
+    <style type="text/css">
+      *, html { margin: 0; padding: 0; }
+      body { margin: 0; padding: 0; text-align: center; font-family: helvetica, sans-serif; font-size: 0.85em; line-height: 1.45em; color: #454545; background: #00c9c9;}
+      #wrapper { width: 960px; margin: 40px auto 0 auto; text-align: left; background: #fff; border-radius: 20px; padding: 20px; }
+      h1 { font-weight: normal; font-family: Georgia, 'Times New Roman', serif; font-size: 1.8em; margin-bottom: 40px; }
+      ::selection { background: #00c9c9; color: white; }
+      a, a:visited { color: #00c9c9; border-bottom: 1px solid #00c9c9; text-decoration: none; }
+    </style>
+  </head>
+  <body onload="document.getElementById('about').dumpWords();">
+    
+    <div id="wrapper">
+      <h1>Read quickly!</h1>
+    
+      <p id="about">This is a silly javascript experiment to make words fall off the page from the end of the paragraph backwards...</p>
+    </div>
+  </body>
+</html>
+    

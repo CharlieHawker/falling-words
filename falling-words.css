@@ -1,0 +1,35 @@
+#fw-wrap {
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+#fw-wrap div.word {
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+  display: block;
+  min-width: 1px;
+  width: auto !important;
+  width: 1px;
+  position: relative;
+}
+#fw-wrap div.letter {
+  float: left;
+}
+#fw-wrap div.word:last-child {
+  -webkit-animation: wordfall 1.5s linear 0 1;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes wordfall {
+  25% {
+    -webkit-transform: rotate(60deg);
+  }
+  65% {
+    opacity: 0.6;
+  }
+  100% {
+    top: 120px;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: rotate(195deg);
+  }
+}
